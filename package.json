@@ -1,0 +1,8 @@
+{
+  "name": "catania.wordcamp.org-2019",
+  "version": "1.0.0",
+  "description": "Style of WordCamp Catania 2019 website",
+  "repository": "git@github.com:wordcamp-catania/catania.wordcamp.org-2019.git",
+  "author": "antonino.scarfi@gmail.com",
+  "license": "MIT"
+}
