@@ -4,7 +4,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        style: './src/main.less'
+        style: [
+            './src/base/2018-orlando.css',
+            './src/main.less'
+        ]
     },
     output: {
         filename: 'main.js',
@@ -20,8 +23,7 @@ module.exports = {
                         loader: 'css-loader', options: {
                             sourceMap: true
                         }
-                    },
-                    "postcss-loader"
+                    }
                 ]
             },
             {
