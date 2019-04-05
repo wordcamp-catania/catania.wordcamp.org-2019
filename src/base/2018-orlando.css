@@ -180,10 +180,6 @@ Custom
 
 CSS Taken from Addiotional CSS textarea in Customizer
 --------------------------------------------------------------*/
-.custom-header-media .site-branding {
-  background-image: url('https://2018.orlando.wordcamp.org/files/2018/07/Final-Header.png') !important;
-}
-
 h3 {
   text-transform: none;
   padding-top: 0;
@@ -1436,23 +1432,6 @@ body {
   position: relative;
 }
 
-/* Site branding */
-.site-branding {
-  background: url('https://2018.orlando.wordcamp.org/files/2018/07/Final-Header.png') no-repeat center bottom;
-  background-size: cover;
-  z-index: 3;
-  height: 13.75rem;
-  margin: 0;
-  padding: 1.25rem 0;
-}
-
-.site-branding a {
-  text-decoration: none;
-  -webkit-transition: opacity .2s;
-  -o-transition: opacity .2s;
-  transition: opacity .2s;
-}
-
 body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
   color: #fff;
 }
@@ -1464,16 +1443,6 @@ body.has-header-image .site-title, body.has-header-video .site-title, body.has-h
   color: #fff;
   font-weight: 400;
   font-family: Oswald, sans-serif;
-}
-
-.custom-logo-link {
-  display: block;
-  margin: 0 auto;
-  vertical-align: middle;
-  width: 9.375rem;
-  height: 8.6875rem;
-  background-size: cover;
-  background: url('https://raw.githubusercontent.com/Erin-Denton/wordcamporlando2018/b4e7bf1fcbda4ab6349e26e4cf2c806ff46107cb/orlandowordcamp.svg') no-repeat center;
 }
 
 body.has-header-image .site-description, body.has-header-video .site-description {
@@ -4728,21 +4697,6 @@ Sponsors
 
   .home .site-content-contain .site-main article:first-child .wrap {
     margin-top: -140px;
-  }
-
-  .custom-logo-link {
-    width: 15.5625rem;
-    height: 12.375rem;
-  }
-
-  .site-branding {
-    height: 400px;
-    padding-top: 6.25rem;
-  }
-
-  .home .site-branding {
-    padding-top: 10rem;
-    height: 500px;
   }
 
   .column-frontpage-main-info {
