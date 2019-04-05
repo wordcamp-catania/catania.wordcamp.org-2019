@@ -8,7 +8,7 @@ Stile del sito ufficiale del WordCamp Catania 2019
 * Run `yarn install`
 * Run `yarn build` to build the less
 * Enable the theme in the network in: http://wordcamp.test/wp-admin/network/themes.php
-* Enable the theme in the wordcamp website in: http://2014.seattle.wordcamp.test/wp-admin/themes.php
+* Enable the theme in the wordcamp website in: http://2014.new-site.wordcamp.test/wp-admin/themes.php
 * Enjoy!
 
 ## Development
