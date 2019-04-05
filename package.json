@@ -18,5 +18,8 @@
         "postcss-loader": "^3.0.0",
         "webpack": "^4.29.6",
         "webpack-cli": "^3.3.0"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.1"
     }
 }
