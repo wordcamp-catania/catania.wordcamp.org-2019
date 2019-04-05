@@ -20,6 +20,6 @@
         "webpack-cli": "^3.3.0"
     },
     "dependencies": {
-        "bootstrap": "3"
+        "bootstrap": "^3.4.1"
     }
 }
