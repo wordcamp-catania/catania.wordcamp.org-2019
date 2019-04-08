@@ -6880,6 +6880,9 @@ pre code {
  */
 main.site-main {
   max-width: 1170px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 header.site-header .site-branding {
   background: url('https://2019.catania.wordcamp.org/files/2019/04/gradient.jpg') no-repeat center bottom;
