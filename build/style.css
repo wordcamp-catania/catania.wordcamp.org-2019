@@ -6907,11 +6907,11 @@ header.site-header .custom-logo-link {
 }
 .home.page .home-sections .wp-block-column:not(:last-child),
 .home.page .home-sections .wp-block-column:nth-child(odd) {
-  margin-right: 8px;
+  margin-right: 15px;
 }
 .home.page .home-sections .wp-block-column:not(:first-child),
 .home.page .home-sections .wp-block-column:nth-child(2n) {
-  margin-left: 8px;
+  margin-left: 15px;
 }
 #wccsp-container #subscribe-submit {
   flex: initial;
