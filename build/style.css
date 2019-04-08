@@ -5185,9 +5185,8 @@ div.wcorg-speaker h2, div.wcorg-organizer h2 {
 /**
  Include Bootstrap 3
  */
-/**
-Home
-*/
+/** Common */
+/** Home */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -6902,6 +6901,9 @@ header.site-header .custom-logo-link {
   vertical-align: middle;
   width: 15.5625rem;
   background-size: cover;
+}
+.home.page .home-sections {
+  margin-bottom: 30px;
 }
 .home.page .home-sections .wp-block-column:not(:last-child),
 .home.page .home-sections .wp-block-column:nth-child(odd) {
