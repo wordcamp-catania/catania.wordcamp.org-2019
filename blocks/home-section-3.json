@@ -1,0 +1,5 @@
+{
+  "__file": "wp_block",
+  "title": "Sezione Home 3",
+  "content": "<!-- wp:html -->\n<div class=\"column-frontpage-main-info\"><a href=\"/organizers/\"><img src=\"https://2018.orlando.wordcamp.org/files/2018/07/icon-planet.png\" alt=\"Organizers icon\" width=\"171\" height=\"109\">Organizers</a></div>\n<!-- /wp:html -->"
+}

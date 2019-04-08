@@ -1,0 +1,5 @@
+{
+  "__file": "wp_block",
+  "title": "Sezione Home 1",
+  "content": "<!-- wp:html -->\n<div class=\"column-frontpage-main-info\"><a href=\"/tickets/\"><img src=\"https://2018.orlando.wordcamp.org/files/2018/07/icon-galaxy.png\" alt=\"Tickets icon\" width=\"171\" height=\"109\">Tickets</a></div>\n<!-- /wp:html -->"
+}

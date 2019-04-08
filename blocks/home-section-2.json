@@ -1,0 +1,5 @@
+{
+  "__file": "wp_block",
+  "title": "Sezione Home 2",
+  "content": "<!-- wp:html -->\n<div class=\"column-frontpage-main-info\"><a href=\"/press/\"><img src=\"https://2018.orlando.wordcamp.org/files/2018/07/icon-astronaut.png\" alt=\"Press icon\" width=\"171\" height=\"109\">Press</a></div>\n<!-- /wp:html -->"
+}
