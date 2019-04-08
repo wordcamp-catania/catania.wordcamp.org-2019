@@ -1,0 +1,15 @@
+.home.page {
+  .home-sections {
+    .wp-block-column {
+      &:not(:last-child),
+      &:nth-child(odd) {
+        margin-right: @home-sections-offset;
+      }
+
+      &:not(:first-child),
+      &:nth-child(2n) {
+        margin-left: @home-sections-offset
+      }
+    }
+  }
+}
