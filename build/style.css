@@ -5185,6 +5185,9 @@ div.wcorg-speaker h2, div.wcorg-organizer h2 {
 /**
  Include Bootstrap 3
  */
+/**
+Home
+*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -6875,6 +6878,9 @@ pre code {
 /**
   Website Style below
  */
+main.site-main {
+  max-width: 1170px;
+}
 header.site-header .site-branding {
   background: url('https://2019.catania.wordcamp.org/files/2019/04/gradient.jpg') no-repeat center bottom;
   background-size: cover;
@@ -6893,6 +6899,14 @@ header.site-header .custom-logo-link {
   vertical-align: middle;
   width: 15.5625rem;
   background-size: cover;
+}
+.home.page .home-sections .wp-block-column:not(:last-child),
+.home.page .home-sections .wp-block-column:nth-child(odd) {
+  margin-right: 8px;
+}
+.home.page .home-sections .wp-block-column:not(:first-child),
+.home.page .home-sections .wp-block-column:nth-child(2n) {
+  margin-left: 8px;
 }
 #wccsp-container #subscribe-submit {
   flex: initial;
