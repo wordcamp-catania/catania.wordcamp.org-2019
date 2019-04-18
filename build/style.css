@@ -4928,21 +4928,6 @@ Sponsors
   visibility: hidden;
 }
 
-.navigation-top .menu > :last-child a {
-  margin-left: 0;
-  background-color: transparent;
-  color: #234792;
-}
-
-.navigation-top .menu > :last-child a:hover {
-  background-color: transparent;
-  color: #009cdc;
-}
-
-.navigation-top .menu > :last-child a:focus {
-  color: #9c1b34;
-}
-
 h3 {
   text-transform: none;
   padding-top: 0;
@@ -6883,6 +6868,14 @@ main.site-main {
   margin-right: auto;
   margin-left: auto;
 }
+/** Button */
+button {
+  background-color: #13759d;
+}
+button:hover,
+button:focus {
+  background: #004a65;
+}
 header.site-header .site-branding {
   background: url('https://2019.catania.wordcamp.org/files/2019/04/gradient.jpg') no-repeat center bottom;
   background-size: cover;
@@ -6901,6 +6894,40 @@ header.site-header .custom-logo-link {
   vertical-align: middle;
   width: 15.5625rem;
   background-size: cover;
+}
+.navigation-top .menu > :last-child a {
+  margin-left: 0;
+  background-color: transparent;
+  color: #234792;
+}
+.navigation-top .menu > :last-child a:hover {
+  background-color: transparent;
+  color: #009cdc;
+}
+.navigation-top .menu > :last-child a:focus {
+  color: #9c1b34;
+}
+footer.site-footer {
+  position: relative;
+  margin-top: 250px;
+  background: #234b6a;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer.site-footer:before {
+  content: '';
+  display: block;
+  height: 190px;
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  background: url('https://2019.catania.wordcamp.org/files/2019/04/skyline-ct.jpg') bottom center no-repeat;
+  background-size: contain;
+}
+footer .site-info {
+  background: inherit;
 }
 .home.page .home-sections {
   margin-bottom: 30px;

@@ -4928,21 +4928,6 @@ Sponsors
   visibility: hidden;
 }
 
-.navigation-top .menu > :last-child a {
-  margin-left: 0;
-  background-color: transparent;
-  color: #234792;
-}
-
-.navigation-top .menu > :last-child a:hover {
-  background-color: transparent;
-  color: #009cdc;
-}
-
-.navigation-top .menu > :last-child a:focus {
-  color: #9c1b34;
-}
-
 h3 {
   text-transform: none;
   padding-top: 0;
