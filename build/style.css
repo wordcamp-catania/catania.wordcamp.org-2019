@@ -5175,7 +5175,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #234792;
 }
 h1 small,
 h2 small,
@@ -6646,6 +6646,13 @@ header.site-header .site-branding {
   margin: 0 !important;
   padding: 9.25rem 0 7.25rem;
   text-align: center;
+}
+header.site-header .site-branding .site-description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #efefef;
+  letter-spacing: 1px;
 }
 header.site-header a {
   text-decoration: none;
