@@ -4514,20 +4514,6 @@ Sponsors
   .admin-bar .site-navigation-fixed.navigation-top, .admin-bar .site-navigation-hidden.navigation-top {
     top: 46px;
   }
-
-  .wrap {
-    padding: 0 25px;
-  }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 768px) {
-  .home .wrap {
-    padding: 0 2em;
-  }
-
-  .site-footer .wrap {
-    padding: 0;
-  }
 }
 
 /*--------------------------------------------------------------

@@ -4514,20 +4514,6 @@ Sponsors
   .admin-bar .site-navigation-fixed.navigation-top, .admin-bar .site-navigation-hidden.navigation-top {
     top: 46px;
   }
-
-  .wrap {
-    padding: 0 25px;
-  }
-}
-
-@media screen and (max-width: 1200px) and (min-width: 768px) {
-  .home .wrap {
-    padding: 0 2em;
-  }
-
-  .site-footer .wrap {
-    padding: 0;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -6655,6 +6641,7 @@ header.site-header .site-branding {
   background-size: cover;
   margin: 0;
   padding: 9.25rem 0 7.25rem;
+  text-align: center;
 }
 header.site-header a {
   text-decoration: none;
@@ -6663,11 +6650,8 @@ header.site-header a {
   transition: opacity 0.2s;
 }
 header.site-header .custom-logo-link {
-  display: block;
-  margin: 0 auto;
-  vertical-align: middle;
-  width: 15.5625rem;
-  background-size: cover;
+  display: inline-block;
+  min-width: 400px;
 }
 .navigation-top {
   font-family: Oswald, sans-serif;
