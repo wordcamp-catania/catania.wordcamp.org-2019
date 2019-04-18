@@ -6685,6 +6685,9 @@ header.site-header .custom-logo-link {
     Mobile
      */
 }
+.navigation-top .main-navigation .menu-scroll-down {
+  display: none;
+}
 .navigation-top .main-navigation li {
   color: #234792;
   background-color: transparent;
