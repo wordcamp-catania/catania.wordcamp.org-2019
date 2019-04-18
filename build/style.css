@@ -6637,6 +6637,9 @@ button:hover,
 button:focus {
   background: #004a65;
 }
+input[type="search"] {
+  box-sizing: border-box;
+}
 header.site-header .site-branding {
   background: url('https://2019.catania.wordcamp.org/files/2019/04/gradient.jpg') no-repeat center bottom;
   background-size: cover;
