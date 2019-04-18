@@ -4906,6 +4906,7 @@ div.wcorg-speaker h2, div.wcorg-organizer h2 {
  */
 /** Typo */
 /** Common */
+/** Header */
 /** Colors */
 /** Home */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -6652,6 +6653,9 @@ header.site-header a {
 header.site-header .custom-logo-link {
   display: inline-block;
   min-width: 400px;
+}
+header.site-header .custom-logo-link a {
+  width: 300px;
 }
 .navigation-top {
   font-family: Oswald, sans-serif;
