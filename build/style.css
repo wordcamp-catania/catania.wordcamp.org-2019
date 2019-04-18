@@ -6654,8 +6654,8 @@ header.site-header .custom-logo-link {
   display: inline-block;
   min-width: 400px;
 }
-header.site-header .custom-logo-link a {
-  width: 300px;
+header.site-header .custom-logo-link img {
+  width: 400px;
 }
 .navigation-top {
   font-family: Oswald, sans-serif;
