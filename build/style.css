@@ -673,100 +673,6 @@ input[type="radio"] + label, input[type="checkbox"] + label {
   font-weight: 400;
 }
 
-button {
-  background-color: #ffc740;
-  border: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  font-size: .875rem;
-  font-weight: 800;
-  line-height: 1;
-  padding: 1em 2em;
-  text-shadow: none;
-  -webkit-transition: background .2s;
-  -o-transition: background .2s;
-  transition: background .2s;
-}
-
-button .icon-search {
-  fill: #fff;
-}
-
-input[type="button"], input[type="submit"] {
-  background-color: #ffc740;
-  border: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  font-size: .875rem;
-  font-weight: 800;
-  line-height: 1;
-  padding: 1em 2em;
-  text-shadow: none;
-  -webkit-transition: background .2s;
-  -o-transition: background .2s;
-  transition: background .2s;
-}
-
-input + button {
-  padding: .75em 2em;
-}
-
-input + input[type="button"], input + input[type="submit"] {
-  padding: .75em 2em;
-}
-
-button.secondary {
-  background-color: #ddd;
-  color: #222;
-}
-
-input[type="reset"], input[type="button"].secondary, input[type="reset"].secondary, input[type="submit"].secondary {
-  background-color: #ddd;
-  color: #222;
-}
-
-button:hover, button:focus {
-  background: #c02942;
-}
-
-input[type="button"]:hover, input[type="button"]:focus {
-  background: #767676;
-}
-
-input[type="submit"]:hover, input[type="submit"]:focus {
-  background: #767676;
-}
-
-button.secondary:hover, button.secondary:focus {
-  background: #bbb;
-}
-
-input[type="reset"]:hover, input[type="reset"]:focus {
-  background: #bbb;
-}
-
-input[type="button"].secondary:hover, input[type="button"].secondary:focus {
-  background: #bbb;
-}
-
-input[type="reset"].secondary:hover, input[type="reset"].secondary:focus {
-  background: #bbb;
-}
-
-input[type="submit"].secondary:hover, input[type="submit"].secondary:focus {
-  background: #bbb;
-}
-
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder, :-moz-placeholder {
   color: #333;
@@ -6631,14 +6537,94 @@ main.site-main {
 }
 /** Button */
 button {
-  background-color: #13759d;
+  background-color: #ffc740;
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  padding: 1em 2em;
+  text-shadow: none;
+  -webkit-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
 }
 button:hover,
 button:focus {
-  background: #004a65;
+  background: #ffc740;
+  color: #fff;
+}
+button .icon-search {
+  fill: #fff;
+}
+button .secondary {
+  background-color: #bbb;
+  color: #fff;
+}
+button .secondary:hover,
+button .secondary:focus {
+  background: #bbb;
+  color: #fff;
 }
 input[type="search"] {
   box-sizing: border-box;
+}
+input[type="button"],
+inputinput[type="submit"] {
+  background-color: #ffc740;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 1em 2em;
+  text-shadow: none;
+  -webkit-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+}
+input[type="button"]:hover,
+inputinput[type="submit"]:hover,
+input[type="button"]:focus,
+inputinput[type="submit"]:focus {
+  color: #fff;
+  background: #ffc740;
+}
+input + button {
+  padding: 0.75em 2em;
+}
+input + input[type="button"],
+input + input[type="submit"] {
+  padding: 0.75em 2em;
+}
+input[type="reset"],
+input[type="button"].secondary,
+input[type="reset"].secondary,
+input[type="submit"].secondary {
+  background-color: #bbb;
+  color: #fff;
+}
+input[type="reset"]:hover,
+input[type="button"].secondary:hover,
+input[type="reset"].secondary:hover,
+input[type="submit"].secondary:hover,
+input[type="reset"]:focus,
+input[type="button"].secondary:focus,
+input[type="reset"].secondary:focus,
+input[type="submit"].secondary:focus {
+  color: #fff;
+  background: #bbb;
 }
 header.site-header .site-branding {
   background: url('https://2019.catania.wordcamp.org/files/2019/04/gradient-large-new.png') no-repeat center bottom;
