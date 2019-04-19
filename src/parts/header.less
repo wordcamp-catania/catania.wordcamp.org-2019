@@ -3,7 +3,7 @@ header.site-header {
     background: url('https://2019.catania.wordcamp.org/files/2019/04/gradient-large-new.png') no-repeat center bottom;
     background-size: cover;
     margin: 70px 0 0 !important;
-    padding: 5.25rem 0 10.25rem;
+    padding: 1.25rem 0 1.25rem;
     text-align: center;
 
     .site-description {
@@ -27,7 +27,21 @@ header.site-header {
     min-width: 400px;
 
     img {
-      width: @logo-width;
+      width: @logo-width-small;
+    }
+  }
+}
+
+.home {
+  header.site-header {
+    .site-branding {
+      padding: 5.25rem 0 10.25rem;
+    }
+
+    .custom-logo-link {
+      img {
+        width: @logo-width;
+      }
     }
   }
 }
