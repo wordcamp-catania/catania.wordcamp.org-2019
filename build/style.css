@@ -6537,7 +6537,7 @@ main.site-main {
 }
 /** Button */
 button {
-  background-color: #ffc740;
+  background-color: #13759d;
   border: 0;
   border-radius: 0;
   -webkit-box-shadow: none;
@@ -6556,7 +6556,7 @@ button {
 }
 button:hover,
 button:focus {
-  background: #ffc740;
+  background: #004a65;
   color: #fff;
 }
 button .icon-search {
@@ -6576,7 +6576,7 @@ input[type="search"] {
 }
 input[type="button"],
 inputinput[type="submit"] {
-  background-color: #ffc740;
+  background-color: #13759d;
   color: #fff;
   border: 0;
   border-radius: 0;
@@ -6599,7 +6599,7 @@ inputinput[type="submit"]:hover,
 input[type="button"]:focus,
 inputinput[type="submit"]:focus {
   color: #fff;
-  background: #ffc740;
+  background: #004a65;
 }
 input + button {
   padding: 0.75em 2em;
