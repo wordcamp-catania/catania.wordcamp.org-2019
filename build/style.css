@@ -6665,6 +6665,12 @@ header.site-header .custom-logo-link {
   min-width: 400px;
 }
 header.site-header .custom-logo-link img {
+  width: 150px;
+}
+.home header.site-header .site-branding {
+  padding: 5.25rem 0 10.25rem;
+}
+.home header.site-header .custom-logo-link img {
   width: 250px;
 }
 .navigation-top {
@@ -6698,14 +6704,15 @@ header.site-header .custom-logo-link img {
   text-transform: uppercase;
   padding: 0 0.9375rem;
 }
-.navigation-top .main-navigation li.current-menu-item,
-.navigation-top .main-navigation li.current_page_item {
-  background-color: #11526d;
-  color: #fff;
-}
 .navigation-top .main-navigation li:hover {
   background-color: transparent;
   color: #009cdc;
+}
+.navigation-top .main-navigation li.current-menu-item,
+.navigation-top .main-navigation li.current_page_item,
+.navigation-top .main-navigation li.current_page_parent {
+  background-color: #11526d;
+  color: #fff;
 }
 .navigation-top .main-navigation .menu-toggle {
   border: 0;
