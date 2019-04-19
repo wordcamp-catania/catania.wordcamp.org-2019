@@ -32,15 +32,16 @@
         //line-height: 4.375rem;
       }
 
-      &.current-menu-item,
-      &.current_page_item {
-        background-color: @nav-link-color-active-bg;
-        color: @nav-link-color-active;
-      }
-
       &:hover {
         background-color: @nav-link-color-hover-bg;
         color: @nav-link-color-hover;
+      }
+
+      &.current-menu-item,
+      &.current_page_item,
+      &.current_page_parent {
+        background-color: @nav-link-color-active-bg;
+        color: @nav-link-color-active;
       }
     }
 
