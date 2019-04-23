@@ -1,8 +1,18 @@
 .navigation-top {
   font-family: @font-family-nav;
+  font-weight: 600;
+  background: @nav-bg-color;
+  top: 0;
+  font-size: .9375rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 3;
 
   .wrap {
     padding: 0;
+    position: relative;
   }
 
   @media (max-width:@screen-md) {
@@ -12,36 +22,190 @@
   }
 
   .main-navigation {
+    width: auto;
+
     .menu-scroll-down {
       display: none;
     }
 
-    li {
-      color: @nav-link-color;
-      background-color: @nav-link-color-bg;
+    ul {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      .flex();
+      .flex-align-items(center);
+      .flex-justify(center);
 
-      a {
-        color: inherit;
-        -webkit-transition: color 0.2s, background-color .3s;
-        -o-transition: color 0.2s, background-color .3s;
-        transition: color 0.2s, background-color .3s;
-        text-transform: uppercase;
+      li {
+        border: 0;
+        list-style: none;
+        color: @nav-link-color;
+        background-color: @nav-link-color-bg;
 
-        padding: 0 .9375rem;
-        //height: 4.375rem;
-        //line-height: 4.375rem;
-      }
+        a {
+          color: inherit;
+          -webkit-transition: color 0.2s, background-color .3s;
+          -o-transition: color 0.2s, background-color .3s;
+          transition: color 0.2s, background-color .3s;
+          text-transform: uppercase;
 
-      &:hover {
-        background-color: @nav-link-color-hover-bg;
-        color: @nav-link-color-hover;
-      }
+          padding: 1.5375rem 1.1375rem;
+          height: 4.375rem;
+          line-height: 4.375rem;
+        }
 
-      &.current-menu-item,
-      &.current_page_item,
-      &.current_page_parent {
-        background-color: @nav-link-color-active-bg;
-        color: @nav-link-color-active;
+        &.menu-item-has-children {
+          position: relative;
+          padding-right: 12px;
+
+          .dropdown-toggle {
+            top: 0;
+            left: auto;
+            right: 0;
+            padding: 0;
+            background: none;
+            outline: none;
+
+            &:after {
+              content: '';
+              display: inline-block;
+              right: 16px;
+              top: 1.875rem;
+              left: auto;
+              position: absolute;
+              overflow: hidden;
+              height: 6px;
+              font-size: 1em;
+              width: 6px;
+              text-align: center;
+              -webkit-transform: rotate(45deg);
+              /* Chrome, Safari, Opera */
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+              text-transform: none;
+              text-indent: -10px;
+              border-right: 2px solid @nav-link-color;
+              border-bottom: 2px solid @nav-link-color;
+            }
+          }
+
+          svg {
+            display: none !important;
+          }
+        }
+
+        &:hover {
+          background-color: @nav-link-color-hover-bg;
+          color: @nav-link-color-hover;
+
+          .dropdown-toggle:after {
+            border-color: @nav-link-color-hover;
+          }
+        }
+
+        &.current-menu-item,
+        &.current_page_item,
+        &.current_page_parent {
+          background-color: @nav-link-color-active-bg;
+          color: @nav-link-color-active;
+
+          .dropdown-toggle:after {
+            border-color: @nav-link-color-active;
+          }
+        }
+
+        /**
+         * Sub-menu
+         */
+        ul.sub-menu {
+          display: none;
+        }
+
+        &:hover {
+          display: block;
+
+          ul.sub-menu {
+            @sub-menu-offset: 10px;
+
+            background: @nav-link-color-hover-bg;
+            display: block;
+            position: absolute;
+            width: 200px;
+            text-align: left;
+            padding: @sub-menu-offset 0;
+
+            li {
+              background: @nav-link-color-hover-bg;
+
+              a {
+                line-height: normal;
+                height: auto;
+                display: block;
+                padding-top: @sub-menu-offset;
+                padding-bottom: @sub-menu-offset;
+
+                &:hover {
+                  color: @nav-link-color-hover;
+                }
+              }
+            }
+          }
+        }
+
+        /**
+         * Ticket badge
+         */
+        .ticket-label {
+          float: right;
+          background: #c02942;
+          overflow: hidden;
+
+          a {
+            position: relative;
+            z-index: 2;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+
+          &.current-menu-item {
+            padding-right: 12px;
+
+            a {
+              color: #fff;
+            }
+          }
+
+          &:after {
+            display: block;
+            content: '';
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(45deg);
+            top: 100%;
+            width: 1000px;
+            height: 1000px;
+            position: absolute;
+            left: 20%;
+            background: #fff;
+            opacity: .2;
+            -webkit-transition: all .21s ease-in-out;
+            -o-transition: all .21s ease-in-out;
+            transition: all .21s ease-in-out;
+          }
+
+          &:hover, &:active {
+            text-decoration: none !important;
+            text-shadow: none;
+
+            &:after {
+              top: -850%;
+            }
+          }
+        }
       }
     }
 
