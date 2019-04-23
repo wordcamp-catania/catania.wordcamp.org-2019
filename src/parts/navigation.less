@@ -94,23 +94,25 @@
           }
         }
 
-        &:hover {
-          background-color: @nav-link-color-hover-bg;
-          color: @nav-link-color-hover;
-
-          .dropdown-toggle:after {
-            border-color: @nav-link-color-hover;
-          }
-        }
-
         &.current-menu-item,
         &.current_page_item,
-        &.current_page_parent {
+        &.current_page_parent,
+        &.current-menu-ancestor {
           background-color: @nav-link-color-active-bg;
           color: @nav-link-color-active;
 
           .dropdown-toggle:after {
             border-color: @nav-link-color-active;
+          }
+        }
+
+        &:hover,
+        &.current-menu-ancestor:hover {
+          background-color: @nav-link-color-hover-bg;
+          color: @nav-link-color-hover;
+
+          .dropdown-toggle:after {
+            border-color: @nav-link-color-hover;
           }
         }
 
@@ -130,7 +132,7 @@
             background: @nav-link-color-hover-bg;
             display: block;
             position: absolute;
-            width: 300px;
+            width: 250px;
             text-align: left;
             padding: @sub-menu-offset 0;
 
@@ -148,6 +150,13 @@
                 &:hover {
                   color: @nav-link-color-hover;
                 }
+              }
+
+              &.current-menu-item,
+              &.current_page_item,
+              &.current_page_parent,
+              &.current-menu-ancestor {
+                color: @nav-link-color-hover;
               }
             }
           }

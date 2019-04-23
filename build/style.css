@@ -6918,23 +6918,27 @@ header.site-header .custom-logo-link img {
 .navigation-top .main-navigation ul li.menu-item-has-children svg {
   display: none !important;
 }
-.navigation-top .main-navigation ul li:hover {
-  background-color: #efefef;
-  color: #38a0c3;
-}
-.navigation-top .main-navigation ul li:hover .dropdown-toggle:after {
-  border-color: #38a0c3;
-}
 .navigation-top .main-navigation ul li.current-menu-item,
 .navigation-top .main-navigation ul li.current_page_item,
-.navigation-top .main-navigation ul li.current_page_parent {
+.navigation-top .main-navigation ul li.current_page_parent,
+.navigation-top .main-navigation ul li.current-menu-ancestor {
   background-color: #11526d;
   color: #fff;
 }
 .navigation-top .main-navigation ul li.current-menu-item .dropdown-toggle:after,
 .navigation-top .main-navigation ul li.current_page_item .dropdown-toggle:after,
-.navigation-top .main-navigation ul li.current_page_parent .dropdown-toggle:after {
+.navigation-top .main-navigation ul li.current_page_parent .dropdown-toggle:after,
+.navigation-top .main-navigation ul li.current-menu-ancestor .dropdown-toggle:after {
   border-color: #fff;
+}
+.navigation-top .main-navigation ul li:hover,
+.navigation-top .main-navigation ul li.current-menu-ancestor:hover {
+  background-color: #efefef;
+  color: #38a0c3;
+}
+.navigation-top .main-navigation ul li:hover .dropdown-toggle:after,
+.navigation-top .main-navigation ul li.current-menu-ancestor:hover .dropdown-toggle:after {
+  border-color: #38a0c3;
 }
 .navigation-top .main-navigation ul li ul.sub-menu {
   display: none;
@@ -6946,7 +6950,7 @@ header.site-header .custom-logo-link img {
   background: #efefef;
   display: block;
   position: absolute;
-  width: 300px;
+  width: 250px;
   text-align: left;
   padding: 10px 0;
 }
@@ -6962,6 +6966,12 @@ header.site-header .custom-logo-link img {
   font-size: 0.875rem;
 }
 .navigation-top .main-navigation ul li:hover ul.sub-menu li a:hover {
+  color: #38a0c3;
+}
+.navigation-top .main-navigation ul li:hover ul.sub-menu li.current-menu-item,
+.navigation-top .main-navigation ul li:hover ul.sub-menu li.current_page_item,
+.navigation-top .main-navigation ul li:hover ul.sub-menu li.current_page_parent,
+.navigation-top .main-navigation ul li:hover ul.sub-menu li.current-menu-ancestor {
   color: #38a0c3;
 }
 .navigation-top .main-navigation ul li .ticket-label {
