@@ -6946,7 +6946,7 @@ header.site-header .custom-logo-link img {
   background: #efefef;
   display: block;
   position: absolute;
-  width: 200px;
+  width: 300px;
   text-align: left;
   padding: 10px 0;
 }
@@ -6959,6 +6959,7 @@ header.site-header .custom-logo-link img {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 0.875rem;
 }
 .navigation-top .main-navigation ul li:hover ul.sub-menu li a:hover {
   color: #38a0c3;
