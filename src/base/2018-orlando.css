@@ -53,28 +53,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 /*--------------------------------------------------------------
-3.0 Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em;
-}
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em;
-}
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*--------------------------------------------------------------
 4.0 Clearings
 --------------------------------------------------------------*/
 .clear:before, .clear:after {
@@ -1530,10 +1508,6 @@ a.btn-red:hover, a.btn-red:focus {
 .site-content-contain {
   background-color: #fff;
   position: relative;
-}
-
-.site-content {
-  padding: 2.5em 0 0;
 }
 
 /*--------------------------------------------------------------
@@ -3727,10 +3701,6 @@ Sponsors
   }
 
   /* Posts */
-  .site-content {
-    padding: 1em 0 0;
-  }
-
   .single-post .entry-title, .page .entry-title {
     font-size: 37px;
   }

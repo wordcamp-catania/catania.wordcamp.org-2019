@@ -7,7 +7,9 @@ main.site-main {
   .container;
 }
 
-/** Button */
+/*--------------------------------------------------------------
+Buttons
+--------------------------------------------------------------*/
 button {
   background-color: @button-bg-color;
   border: 0;
@@ -98,4 +100,26 @@ input {
       background: @button-secondary-hover-bg-color;
     }
   }
+}
+
+/*--------------------------------------------------------------
+Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
