@@ -6762,12 +6762,6 @@ header.site-header .custom-logo-link img {
   background: #ff896b;
   color: #fff;
 }
-.navigation-top .main-navigation ul li.ticket-label.current-menu-item {
-  padding-right: 12px;
-}
-.navigation-top .main-navigation ul li.ticket-label.current-menu-item a {
-  color: #fff;
-}
 .navigation-top .main-navigation ul li.ticket-label:hover,
 .navigation-top .main-navigation ul li.ticket-label:active {
   text-decoration: none !important;
