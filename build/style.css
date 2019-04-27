@@ -6748,50 +6748,33 @@ header.site-header .custom-logo-link img {
 .navigation-top .main-navigation ul li:hover ul.sub-menu li.current-menu-ancestor {
   color: #38a0c3;
 }
-.navigation-top .main-navigation ul li .ticket-label {
+.navigation-top .main-navigation ul li.ticket-label {
   float: right;
-  background: #c02942;
+  background: #eb6d4c;
+  color: #fff;
   overflow: hidden;
 }
-.navigation-top .main-navigation ul li .ticket-label a {
+.navigation-top .main-navigation ul li.ticket-label a {
   position: relative;
   z-index: 2;
 }
-.navigation-top .main-navigation ul li .ticket-label a:hover {
+.navigation-top .main-navigation ul li.ticket-label a:hover {
+  background: #ff896b;
   color: #fff;
 }
-.navigation-top .main-navigation ul li .ticket-label.current-menu-item {
+.navigation-top .main-navigation ul li.ticket-label.current-menu-item {
   padding-right: 12px;
 }
-.navigation-top .main-navigation ul li .ticket-label.current-menu-item a {
+.navigation-top .main-navigation ul li.ticket-label.current-menu-item a {
   color: #fff;
 }
-.navigation-top .main-navigation ul li .ticket-label:after {
-  display: block;
-  content: '';
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
-  top: 100%;
-  width: 1000px;
-  height: 1000px;
-  position: absolute;
-  left: 20%;
-  background: #fff;
-  opacity: 0.2;
-  -webkit-transition: all 0.21s ease-in-out;
-  -o-transition: all 0.21s ease-in-out;
-  transition: all 0.21s ease-in-out;
-}
-.navigation-top .main-navigation ul li .ticket-label:hover,
-.navigation-top .main-navigation ul li .ticket-label:active {
+.navigation-top .main-navigation ul li.ticket-label:hover,
+.navigation-top .main-navigation ul li.ticket-label:active {
   text-decoration: none !important;
   text-shadow: none;
 }
-.navigation-top .main-navigation ul li .ticket-label:hover:after,
-.navigation-top .main-navigation ul li .ticket-label:active:after {
+.navigation-top .main-navigation ul li.ticket-label:hover:after,
+.navigation-top .main-navigation ul li.ticket-label:active:after {
   top: -850%;
 }
 .navigation-top .main-navigation .menu-toggle {

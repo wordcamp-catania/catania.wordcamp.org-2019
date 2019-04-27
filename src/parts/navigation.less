@@ -165,9 +165,10 @@
         /**
          * Ticket badge
          */
-        .ticket-label {
+        &.ticket-label {
           float: right;
-          background: #c02942;
+          background: desaturate(#ff6138, 20%);
+          color: #fff;
           overflow: hidden;
 
           a {
@@ -175,6 +176,7 @@
             z-index: 2;
 
             &:hover {
+              background: lighten(#ff6138, 10%);
               color: #fff;
             }
           }
@@ -185,26 +187,6 @@
             a {
               color: #fff;
             }
-          }
-
-          &:after {
-            display: block;
-            content: '';
-            -ms-transform: rotate(45deg);
-            /* IE 9 */
-            -webkit-transform: rotate(45deg);
-            /* Chrome, Safari, Opera */
-            transform: rotate(45deg);
-            top: 100%;
-            width: 1000px;
-            height: 1000px;
-            position: absolute;
-            left: 20%;
-            background: #fff;
-            opacity: .2;
-            -webkit-transition: all .21s ease-in-out;
-            -o-transition: all .21s ease-in-out;
-            transition: all .21s ease-in-out;
           }
 
           &:hover, &:active {
