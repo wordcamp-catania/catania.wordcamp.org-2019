@@ -98,7 +98,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .nav-links {
-  border-top: 1px solid;
+  border-top: 1px solid #ddd;
 }
 
 .nav-links:before, .nav-links:after {
@@ -952,12 +952,6 @@ a .nav-title,
 }
 
 .logged-in-as a:focus, .logged-in-as a:hover {
-  color: #000;
-  text-decoration: underline;
-}
-
-a:focus .nav-title,
-a:hover .nav-title {
   color: #000;
   text-decoration: underline;
 }
@@ -1907,7 +1901,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .nav-title {
-  color: #333;
   font-size: 15px;
   font-size: .9375rem;
 }
