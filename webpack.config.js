@@ -23,7 +23,8 @@ module.exports = {
                     MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader', options: {
-                            sourceMap: true
+                            sourceMap: true,
+                            url: false
                         }
                     }
                 ]
@@ -34,7 +35,8 @@ module.exports = {
                     loader: MiniCssExtractPlugin.loader
                 }, {
                     loader: 'css-loader', options: {
-                        sourceMap: true
+                        sourceMap: true,
+                        url: false
                     }
                 }, {
                     loader: 'less-loader', options: {
@@ -60,7 +62,8 @@ module.exports = {
                     // Disable `width` and `height` attributes on the root SVG element
                     // as these will skew the sprites when using the <view> via fragment identifiers
                     sizes: false
-                }
+                },
+                svg4everybody: true
             },
             sprite: {
                 generate: {
@@ -77,11 +80,7 @@ module.exports = {
             },
             styles: {
                 // Specifiy that we want to use URLs with fragment identifiers in a styles file as well
-                format: 'data',
-
-                // Path to the styles file, note that this method uses the `output.publicPath` webpack option
-                // to generate the path/URL to the spritemap itself so you might have to look into that
-                filename: path.join(__dirname, 'src/base/_sprites.less')
+                format: 'fragment'
             }
         })
     ]

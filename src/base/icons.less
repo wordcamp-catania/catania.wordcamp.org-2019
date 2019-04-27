@@ -1,4 +1,9 @@
-@import '_sprites';
+@base-url: "/wp-content/themes/catania.wordcamp.org-2019/build/spritemap.svg";
+
+.sprite(@icon, @gradient) {
+  background: url('@{base-url}#sprite-@{icon}-fragment') center no-repeat;
+  fill: url('@{base-url}#@{gradient}');
+}
 
 .wccta-icons {
   width: 100px;
@@ -6,26 +11,26 @@
   display: inline-block;
 
   &.balloon {
-    .sprite(@sprite-balloon);
+    .sprite('balloon', 'SVGID_1_');
   }
 
   &.location {
-    .sprite(@sprite-location);
+    .sprite('location', 'SVGID_2_');
   }
 
   &.speaker {
-    .sprite(@sprite-speaker);
+    .sprite('speaker', 'SVGID_3_');
   }
 
   &.sponsor {
-    .sprite(@sprite-sponsor);
+    .sprite('sponsor', 'SVGID_4_');
   }
 
   &.ticket {
-    .sprite(@sprite-ticket);
+    .sprite('ticket', 'SVGID_5_');
   }
 
   &.volunteer {
-    .sprite(@sprite-volunteer);
+    .sprite('volunteer', 'SVGID_6_');
   }
 }
