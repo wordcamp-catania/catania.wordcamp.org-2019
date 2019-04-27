@@ -864,14 +864,6 @@ a .nav-title,
   text-decoration: none;
 }
 
-.site-footer .widget-area {
-  background-color: rgba(27,45,42,.85);
-}
-
-.site-footer .widget-area ul li a {
-  text-decoration: none;
-}
-
 .entry-content a:focus, .entry-content a:hover {
   outline: 0;
   text-decoration: none;
@@ -886,10 +878,6 @@ a .nav-title,
 .widget a:focus, .widget a:hover {
   color: #000;
   text-decoration: underline;
-}
-
-.site-footer .widget-area a:focus, .site-footer .widget-area a:hover {
-  color: #e6b022;
 }
 
 .posts-navigation a:focus, .posts-navigation a:hover {
@@ -2250,74 +2238,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
   }
 }
 
-/*--------------------------------------------------------------
-13.6 Footer
---------------------------------------------------------------*/
-.site-footer {
-  background: url('https://2018.orlando.wordcamp.org/files/2018/07/space-bg.png') repeat-y;
-  background-size: cover;
-}
-
-.site-footer .wrap {
-  padding: 0;
-  max-width: 100%;
-}
-
-.site-footer .widget-area {
-  padding: 0;
-}
-
-.site-footer .widget-column {
-  margin: 0 auto;
-  max-width: 1170px;
-  float: none !important;
-  clear: both;
-}
-
-.social-navigation {
-  font-size: 16px;
-  font-size: 1rem;
-  margin-bottom: 1em;
-}
-
-.social-navigation ul {
-  list-style: none;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-.social-navigation li {
-  display: inline;
-}
-
-.social-navigation a {
-  background-color: #767676;
-  border-radius: 40px;
-  color: #fff;
-  display: inline-block;
-  height: 40px;
-  margin: 0 1em .5em 0;
-  text-align: center;
-  width: 40px;
-}
-
-.social-navigation a:hover, .social-navigation a:focus {
-  background-color: #333;
-}
-
-.social-navigation .icon {
-  height: 16px;
-  top: 12px;
-  width: 16px;
-  vertical-align: top;
-  border: 2px solid #fff;
-}
-
-.jetpack_widget_social_icons a:hover *,
-.jetpack_widget_social_icons a:focus * {
-  fill: #009cdc;
-}
-
 /* Site info */
 .site-info {
   padding: .5em 0;
@@ -2335,17 +2255,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
   visibility: hidden;
   height: 0;
   width: 100%;
-}
-
-[class*="footer-widget"] {
-  color: #fff;
-  padding-top: 5em;
-  text-align: center;
-}
-
-.footer-widget-1 h2.widget-title {
-  color: #fff;
-  margin-bottom: 30px;
 }
 
 .jetpack_subscription_widget {
@@ -2433,37 +2342,9 @@ body:not(.twentyseventeen-front-page) .entry-header {
   font-size: 1rem;
 }
 
-.footer-widget-2 {
-  padding: 2em 1em 5em;
-  text-align: center;
-}
-
-.footer-widget-2 h2.widget-title {
-  margin-bottom: .25em;
-  color: white;
-  text-transform: none;
-  font-size: 1rem;
-  font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-weight: bold;
-}
-
-.footer-widget-2 ul {
-  margin: 0;
-}
-
-.footer-widget-2 ul li {
-  margin: 0;
-  padding: 0 !important;
-}
-
-.footer-widget-2 section.widget {
-  float: left;
-}
-
 .site-info {
   text-align: center;
   width: 100%;
-  background-color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -3819,21 +3700,6 @@ Sponsors
     margin-top: 3em;
   }
 
-  .site-footer .widget-column.footer-widget-1 {
-    float: left;
-    width: 100%;
-  }
-
-  .site-footer .widget-column.footer-widget-1 h2.widget-title {
-    font-size: 26px;
-    font-size: 1.5rem;
-  }
-
-  .site-footer .widget-column.footer-widget-2 {
-    float: right;
-    width: 100%;
-  }
-
   .site-footer .widget-column .widget {
     width: 100%;
     /* 		float: none; */
@@ -4294,28 +4160,6 @@ body.home .container.marginbottom0 {
 
   .attachment-wcb-sponsor-logo-horizontal-2x {
     margin-top: 20px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 699px) {
-  .footer-widget-2 section.widget {
-    width: 50% !important;
-    padding-left: 0;
-    display: inline-block;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .footer-widget-2 section.widget {
-    width: 25% !important;
-    padding-left: 5%;
-    display: inline-block;
-    text-align: left;
-  }
-
-  .footer-widget-2 section.widget_nav_menu ul li {
-    display: block !important;
-    text-align: left;
   }
 }
 
@@ -7121,8 +6965,28 @@ footer.site-footer:before {
   background: url('https://2019.catania.wordcamp.org/files/2019/04/skyline-ct.jpg') bottom center no-repeat;
   background-size: contain;
 }
-footer .site-info {
-  background: inherit;
+footer.site-footer .widget-area {
+  padding: 2em 0 0;
+}
+footer.site-footer .widget-area .widget-title {
+  color: #fff;
+  font-size: 1.3em;
+}
+footer.site-footer .widget-area .widget.jetpack_widget_social_icons li {
+  border: 1px solid white;
+  display: inline-block;
+  line-height: 1;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 100%;
+  transition: ease 0.2s;
+}
+footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover {
+  border-color: #83b2d6;
+}
+footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .icon * {
+  transition: ease 0.2s;
+  fill: #83b2d6;
 }
 .home.page .home-sections {
   margin-bottom: 30px;
