@@ -2257,91 +2257,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
   width: 100%;
 }
 
-.jetpack_subscription_widget {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.jetpack_subscription_widget form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.jetpack_subscription_widget #subscribe-email {
-  float: left;
-  width: 60%;
-  margin: 0;
-  padding-left: 15px;
-}
-
-.jetpack_subscription_widget #subscribe-email input {
-  width: 100%;
-  height: 50px;
-  border: 1px solid #fff;
-}
-
-.jetpack_subscription_widget #subscribe-email input:focus {
-  border: 1px solid #ffc740;
-  border-right: 1px solid #fff;
-}
-
-.jetpack_subscription_widget #subscribe-submit {
-  float: left;
-  width: 35%;
-  height: 50px;
-  margin: 0;
-  position: relative;
-  overflow: hidden;
-  background: #009cdc;
-}
-
-.jetpack_subscription_widget #subscribe-submit:after {
-  display: block;
-  content: '';
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
-  top: 100%;
-  width: 1000px;
-  height: 1000px;
-  position: absolute;
-  left: 20%;
-  background: #fff;
-  opacity: .2;
-  -webkit-transition: all .21s ease-in-out;
-  -o-transition: all .21s ease-in-out;
-  transition: all .21s ease-in-out;
-}
-
-.jetpack_subscription_widget #subscribe-submit:hover:after {
-  top: -850%;
-}
-
-.jetpack_subscription_widget #subscribe-submit input {
-  padding: .7em 0;
-  width: 100%;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.8;
-  height: 50px;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-  background: transparent;
-  font-family: Oswald, sans-serif;
-}
-
-.jetpack_subscription_widget #subscribe-submit input:hover {
-  background: transparent;
-}
-
-.jetpack_subscription_widget #subscribe-text p {
-  font-size: 1rem;
-}
-
 .site-info {
   text-align: center;
   width: 100%;
@@ -3773,10 +3688,6 @@ Sponsors
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 15px;
-  }
-
-  .jetpack_subscription_widget form #subscribe-text {
-    margin: 0;
   }
 }
 
