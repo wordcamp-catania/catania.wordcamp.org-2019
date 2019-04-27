@@ -4115,8 +4115,7 @@ body.home .container.marginbottom0 {
   display: none;
 }
 
-.wcorg-speakers,
-.wcorg-organizers {
+.wcorg-speakers {
   display: grid;
   grid-template-columns: repeat(2,50%);
   grid-column-gap: 50px;
@@ -6549,6 +6548,9 @@ html[lang="th"] * {
 }
 .site-content:after {
   clear: both;
+}
+.page:not(.home) .site-content .wrap {
+  max-width: 750px;
 }
 header.site-header {
   position: relative;
