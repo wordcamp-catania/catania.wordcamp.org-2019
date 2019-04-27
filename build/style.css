@@ -6919,6 +6919,9 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
 .home.page .wp-block-latest-posts.is-grid li a {
   display: block;
 }
+.post .post-thumbnail {
+  display: none;
+}
 #wccsp-container #subscribe-submit {
   flex: initial;
 }
