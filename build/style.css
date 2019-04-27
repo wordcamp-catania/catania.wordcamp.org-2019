@@ -7110,6 +7110,23 @@ footer .site-info {
 .home.page .home-sections .wp-block-column:nth-child(2n) {
   margin-left: 15px;
 }
+.home.page .wp-block-latest-posts.is-grid {
+  max-width: none;
+}
+.home.page .wp-block-latest-posts.is-grid li {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-size: 19px;
+  transition: all ease 0.1s;
+}
+.home.page .wp-block-latest-posts.is-grid li:hover {
+  transform: scale(1.04);
+}
+.home.page .wp-block-latest-posts.is-grid li a {
+  display: block;
+}
 #wccsp-container #subscribe-submit {
   flex: initial;
 }
