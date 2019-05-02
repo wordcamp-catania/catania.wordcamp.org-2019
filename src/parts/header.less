@@ -8,6 +8,10 @@ header.site-header {
     padding: 1.25rem 0 1.25rem;
     text-align: center;
 
+    @media (max-width:@screen-md) {
+      margin-top: 48px !important;
+    }
+
     .site-description {
       font-family: 'Montserrat', sans-serif;
       font-weight: 300;
@@ -43,6 +47,10 @@ header.site-header {
     .custom-logo-link {
       img {
         width: @logo-width;
+      }
+
+      @media (max-width:@screen-md) {
+        min-width: auto;
       }
     }
   }

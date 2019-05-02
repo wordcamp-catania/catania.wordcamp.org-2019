@@ -163,4 +163,40 @@
       }
     }
   }
+
+  @media (max-width:@screen-md) {
+    .tix_tickets_table,
+    .tix-ticket-form {
+      thead {
+        display: none;
+      }
+
+      tbody {
+        .tix-column-description {
+          display: block;
+        }
+
+        .tix-column-price,
+        .tix-column-remaining,
+        .tix-column-quantity {
+          display: block;
+          float: left;
+          width: 33%;
+        }
+
+        .tix-column-quantity select {
+          height: 1.6em;
+          font-size: 0.8rem;
+        }
+
+        .tix-ticket-title {
+          .h4;
+        }
+
+        .tix-ticket-excerpt {
+          font-size: 0.835rem;
+        }
+      }
+    }
+  }
 }

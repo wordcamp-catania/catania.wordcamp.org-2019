@@ -7065,6 +7065,11 @@ header.site-header .site-branding {
   padding: 1.25rem 0 1.25rem;
   text-align: center;
 }
+@media (max-width: 992px) {
+  header.site-header .site-branding {
+    margin-top: 48px !important;
+  }
+}
 header.site-header .site-branding .site-description {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -7090,6 +7095,11 @@ header.site-header .custom-logo-link img {
 }
 .home header.site-header .custom-logo-link img {
   width: 250px;
+}
+@media (max-width: 992px) {
+  .home header.site-header .custom-logo-link {
+    min-width: auto;
+  }
 }
 .navigation-top {
   font-family: 'Open Sans', sans-serif;
@@ -7283,11 +7293,12 @@ header.site-header .custom-logo-link img {
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 0.9375rem 0.625rem;
+  padding: 0.9375rem;
   margin: 0 auto;
   text-shadow: none;
   background: #009cdc;
   width: 100%;
+  text-align: left;
 }
 .navigation-top .main-navigation .menu-toggle .icon {
   margin-right: 0.5em;
@@ -7303,19 +7314,62 @@ header.site-header .custom-logo-link img {
   display: none;
 }
 @media (max-width: 992px) {
-  .navigation-top .main-navigation .menu-main-menu-container {
+  .navigation-top .main-navigation {
+    position: relative;
+    height: 48px;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul {
+    margin-left: 0;
+    display: block;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li {
     display: none;
+    padding-right: 0;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li a {
+    padding: 0.5em 15px;
+    display: block;
+    line-height: normal;
+    height: auto;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li ul.sub-menu {
+    display: none;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li:hover {
+    display: block;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li:hover ul.sub-menu {
+    display: block;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li.menu-item-has-children svg {
+    display: inline !important;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li.menu-item-has-children svg * {
+    fill: #07465b;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li.menu-item-has-children .dropdown-toggle {
+    display: none;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li.ticket-label {
+    display: block;
+    position: absolute;
+    height: auto;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    padding: 0.315rem 0.625rem;
+    line-height: 1;
+  }
+  .navigation-top .main-navigation.toggled-on {
+    height: auto;
   }
   .navigation-top .main-navigation.toggled-on .menu-main-menu-container {
     display: block;
   }
-  .navigation-top .main-navigation.toggled-on .menu-main-menu-container ul {
-    margin-left: 0;
-    padding-left: 0;
-  }
   .navigation-top .main-navigation.toggled-on .menu-main-menu-container ul li {
     display: block;
-    padding: 0.5em 0 0.5em 15px;
   }
 }
 aside.widget-area {
@@ -7741,6 +7795,59 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
 }
 #tix .tix-submit .tix-payment-method-container .tix-alternate-payment-option #tix-payment-method_paypal:checked + label {
   border-color: #555;
+}
+@media (max-width: 992px) {
+  #tix .tix_tickets_table thead,
+  #tix .tix-ticket-form thead {
+    display: none;
+  }
+  #tix .tix_tickets_table tbody .tix-column-description,
+  #tix .tix-ticket-form tbody .tix-column-description {
+    display: block;
+  }
+  #tix .tix_tickets_table tbody .tix-column-price,
+  #tix .tix-ticket-form tbody .tix-column-price,
+  #tix .tix_tickets_table tbody .tix-column-remaining,
+  #tix .tix-ticket-form tbody .tix-column-remaining,
+  #tix .tix_tickets_table tbody .tix-column-quantity,
+  #tix .tix-ticket-form tbody .tix-column-quantity {
+    display: block;
+    float: left;
+    width: 33%;
+  }
+  #tix .tix_tickets_table tbody .tix-column-quantity select,
+  #tix .tix-ticket-form tbody .tix-column-quantity select {
+    height: 1.6em;
+    font-size: 0.8rem;
+  }
+  #tix .tix_tickets_table tbody .tix-ticket-title,
+  #tix .tix-ticket-form tbody .tix-ticket-title {
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #24647d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  #tix .tix_tickets_table tbody .tix-ticket-title small,
+  #tix .tix-ticket-form tbody .tix-ticket-title small,
+  #tix .tix_tickets_table tbody .tix-ticket-title .small,
+  #tix .tix-ticket-form tbody .tix-ticket-title .small {
+    font-weight: 400;
+    line-height: 1;
+    color: #777777;
+  }
+  #tix .tix_tickets_table tbody .tix-ticket-title small,
+  #tix .tix-ticket-form tbody .tix-ticket-title small,
+  #tix .tix_tickets_table tbody .tix-ticket-title .small,
+  #tix .tix-ticket-form tbody .tix-ticket-title .small {
+    font-size: 75%;
+  }
+  #tix .tix_tickets_table tbody .tix-ticket-excerpt,
+  #tix .tix-ticket-form tbody .tix-ticket-excerpt {
+    font-size: 0.835rem;
+  }
 }
 #wccsp-container #subscribe-submit {
   flex: initial;
