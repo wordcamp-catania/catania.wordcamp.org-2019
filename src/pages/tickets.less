@@ -1,0 +1,101 @@
+#tix {
+  .clearfix();
+
+  .tix_tickets_table {
+    .table;
+    border-top: 2px solid @table-border-top-color;
+    border-bottom: 2px solid @table-border-top-color;
+
+    th,
+    td {
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    > thead > tr > th {
+      border-bottom-width: 1px;
+      font-size: 0.895em;
+    }
+
+    tbody {
+      .tix-ticket-title {
+        .h3;
+        display: block;
+        margin-top: 0;
+
+        + br {
+          display: none;
+        }
+      }
+
+      .tix-ticket-excerpt,
+      .tix-column-price,
+      .tix-column-remaining,
+      .tix-column-quantity select {
+        font-size: 0.935rem;
+        color: lighten(@text-color, 20%);
+      }
+
+      .tix-column-price,
+      .tix-column-remaining,
+      .tix-column-quantity select {
+        font-weight: 600;
+      }
+
+      .tix-column-quantity select {
+        border-radius: .1875rem;
+        cursor: pointer;
+        background-color: #fff;
+        width: 100%;
+        border: 1px solid @table-border-top-color;
+      }
+
+      .tix-row-coupon {
+        #tix-coupon-link {
+          .h4;
+        }
+
+        #tix-coupon-container {
+          position: relative;
+          padding-right: 10rem;
+
+          #tix-coupon-input {
+            margin-right: 6px;
+            border-color: @table-border-top-color;
+            line-height: 1.4;
+
+            &:focus {
+              border-color: darken(@table-border-top-color, 20%);
+            }
+          }
+
+          input[type="submit"] {
+            .button;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 9.5rem;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+
+  form > p > input[type="submit"] {
+    .button;
+    background-color: @nav-ticket-badge-bg-color;
+    color: @nav-ticket-badge-color;
+    font-size: 1.2rem;
+
+    &:hover {
+      background-color: @nav-ticket-badge-bg-hover-color;
+      color: @nav-ticket-badge-hover-color;
+    }
+  }
+}

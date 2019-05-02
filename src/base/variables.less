@@ -20,7 +20,7 @@
 @logo-width-small: 150px;
 
 /** Colors */
-@text-color: #0c1934;
+@text-color: #333;
 @headings-color: #24647d;
 @nav-bg-color: #fff;
 @nav-link-color: #07465b;
@@ -29,6 +29,10 @@
 @nav-link-color-hover-bg: #efefef;
 @nav-link-color-active: #fff;
 @nav-link-color-active-bg: #11526d;
+@nav-ticket-badge-color: #fff;
+@nav-ticket-badge-bg-color: desaturate(#ff6138, 20%);
+@nav-ticket-badge-hover-color: #fff;
+@nav-ticket-badge-bg-hover-color: lighten(#ff6138, 10%);
 @nav-mobile-bg: #009cdc;
 @button-bg-color: #13759d;
 @button-text-color: #fff;
@@ -38,7 +42,12 @@
 @button-secondary-text-color: #222;
 @button-secondary-hover-bg-color: #bbb;
 @button-secondary-hover-text-color: #fff;
+@table-border-top-color: lighten(#24647d, 50%);
+@table-border-color: desaturate(lighten(@table-border-top-color, 10%), 20%);
 @footer-bg-color: #234b6a;
 
 /** Home */
 @home-sections-offset: 15px;
+
+/** Tables */
+@table-cell-padding: 18px;
