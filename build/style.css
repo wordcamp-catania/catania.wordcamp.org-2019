@@ -1504,32 +1504,6 @@ a.btn-red:hover, a.btn-red:focus {
   width: 20px;
 }
 
-.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.entry-title {
-  font-weight: bold;
-  color: #234792;
-  letter-spacing: .05em;
-}
-
-.entry-title a {
-  color: #009cdc;
-  text-decoration: none;
-}
-
-.entry-title a:hover {
-  text-decoration: none !important;
-  color: #234792;
-}
-
-.entry-title:not(:first-child) {
-  padding-top: 0;
-}
-
 .entry-meta {
   color: #767676;
   font-size: 11px;
@@ -3422,10 +3396,6 @@ Sponsors
   }
 
   /* Posts */
-  .single-post .entry-title, .page .entry-title {
-    font-size: 37px;
-  }
-
   .single-post .entry-title {
     padding-bottom: 20px;
   }
@@ -4484,7 +4454,7 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.1;
   color: #24647d;
 }
@@ -4564,27 +4534,27 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 2.775rem;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 1.25rem;
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 1rem;
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 p {
   margin: 0 0 10px;
@@ -6063,20 +6033,24 @@ textarea {
   font-weight: 400;
   line-height: 1.6;
 }
-.entry-title,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  clear: both;
-  margin: 0 0 0.75em;
-  padding: 1.5em 0 0;
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
+.entry-title {
+  font-family: inherit;
   font-weight: 600;
+  line-height: 1.1;
   color: #24647d;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 2.775rem;
+}
+.entry-title small,
+.entry-title .small {
+  font-weight: 400;
+  line-height: 1;
+  color: #777777;
+}
+.entry-title small,
+.entry-title .small {
+  font-size: 65%;
 }
 h1:first-child,
 h2:first-child,
@@ -6085,25 +6059,6 @@ h4:first-child,
 h5:first-child,
 h6:first-child {
   padding-top: 0;
-}
-h1 {
-  font-size: 1.875rem;
-  font-weight: 300;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 1rem;
-}
-h5 {
-  font-size: 0.875rem;
-}
-h6 {
-  font-size: 0.75rem;
 }
 p {
   margin: 0 0 1.5em;
