@@ -7504,13 +7504,6 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
 #tix .tix_tickets_table tbody .tix-column-quantity select {
   font-weight: 600;
 }
-#tix .tix_tickets_table tbody .tix-column-quantity select {
-  border-radius: 0.1875rem;
-  cursor: pointer;
-  background-color: #fff;
-  width: 100%;
-  border: 1px solid #b6dbea;
-}
 #tix .tix_tickets_table tbody .tix-row-coupon #tix-coupon-link {
   font-family: inherit;
   font-weight: 600;
@@ -7533,14 +7526,6 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
 #tix .tix_tickets_table tbody .tix-row-coupon #tix-coupon-container {
   position: relative;
   padding-right: 10rem;
-}
-#tix .tix_tickets_table tbody .tix-row-coupon #tix-coupon-container #tix-coupon-input {
-  margin-right: 6px;
-  border-color: #b6dbea;
-  line-height: 1.4;
-}
-#tix .tix_tickets_table tbody .tix-row-coupon #tix-coupon-container #tix-coupon-input:focus {
-  border-color: #67b5d3;
 }
 #tix .tix_tickets_table tbody .tix-row-coupon #tix-coupon-container input[type="submit"] {
   background-color: #13759d;
@@ -7582,7 +7567,43 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
   background: #bbb;
   color: #fff;
 }
-#tix form > p > input[type="submit"] {
+#tix .tix_tickets_table tbody .tix-column-quantity select {
+  width: 100%;
+}
+#tix .tix_tickets_table tbody select {
+  border-radius: 0.1875rem;
+  cursor: pointer;
+  background-color: #fff;
+  width: 70%;
+  border: 1px solid #b6dbea;
+}
+#tix .tix_tickets_table tbody input[type="text"],
+#tix .tix_tickets_table tbody input[type="email"],
+#tix .tix_tickets_table tbody input[type="url"],
+#tix .tix_tickets_table tbody textarea {
+  margin-right: 6px;
+  border-color: #b6dbea;
+  line-height: 1.4;
+  border-radius: 0.15rem;
+}
+#tix .tix_tickets_table tbody input[type="text"]:focus,
+#tix .tix_tickets_table tbody input[type="email"]:focus,
+#tix .tix_tickets_table tbody input[type="url"]:focus,
+#tix .tix_tickets_table tbody textarea:focus {
+  border-color: #67b5d3;
+}
+#tix .tix_tickets_table tbody .tix-left {
+  font-size: 1rem;
+}
+#tix .tix_tickets_table tbody .tix-right label {
+  font-weight: 400;
+  font-size: 1rem;
+}
+#tix .tix_tickets_table tbody .tix-right br {
+  display: none;
+}
+#tix input[type="submit"],
+#tix .tix-submit input[type="submit"] {
   background-color: #13759d;
   border: 0;
   border-radius: 0;
@@ -7602,26 +7623,64 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
   color: #fff;
   font-size: 1.2rem;
 }
-#tix form > p > input[type="submit"]:hover,
-#tix form > p > input[type="submit"]:focus {
+#tix input[type="submit"]:hover,
+#tix .tix-submit input[type="submit"]:hover,
+#tix input[type="submit"]:focus,
+#tix .tix-submit input[type="submit"]:focus {
   background: #004a65;
   color: #fff;
 }
-#tix form > p > input[type="submit"] .icon-search {
+#tix input[type="submit"] .icon-search,
+#tix .tix-submit input[type="submit"] .icon-search {
   fill: #fff;
 }
-#tix form > p > input[type="submit"] .secondary {
+#tix input[type="submit"] .secondary,
+#tix .tix-submit input[type="submit"] .secondary {
   background-color: #bbb;
   color: #fff;
 }
-#tix form > p > input[type="submit"] .secondary:hover,
-#tix form > p > input[type="submit"] .secondary:focus {
+#tix input[type="submit"] .secondary:hover,
+#tix .tix-submit input[type="submit"] .secondary:hover,
+#tix input[type="submit"] .secondary:focus,
+#tix .tix-submit input[type="submit"] .secondary:focus {
   background: #bbb;
   color: #fff;
 }
-#tix form > p > input[type="submit"]:hover {
+#tix input[type="submit"]:hover,
+#tix .tix-submit input[type="submit"]:hover {
   background-color: #ff896b;
   color: #fff;
+}
+#tix .tix-submit .tix-payment-method-container {
+  padding-top: 0;
+}
+#tix .tix-submit .tix-payment-method-container label {
+  display: inline;
+}
+#tix .tix-submit .tix-payment-method-container .tix-alternate-payment-option {
+  float: right;
+}
+#tix .tix-submit .tix-payment-method-container .tix-alternate-payment-option #tix-payment-method_paypal {
+  display: none;
+}
+#tix .tix-submit .tix-payment-method-container .tix-alternate-payment-option #tix-payment-method_paypal + label {
+  background: url(https://www.paypalobjects.com/webstatic/mktg/logo-center/logo_paypal_sicuro.png);
+  background-size: 100% 100%;
+  width: 159px;
+  height: 55px;
+  text-indent: 100%;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+}
+#tix .tix-submit .tix-payment-method-container .tix-alternate-payment-option #tix-payment-method_paypal + label:hover {
+  border-color: #555;
+}
+#tix .tix-submit .tix-payment-method-container .tix-alternate-payment-option #tix-payment-method_paypal:checked + label {
+  border-color: #555;
 }
 #wccsp-container #subscribe-submit {
   flex: initial;

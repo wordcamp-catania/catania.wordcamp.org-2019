@@ -47,14 +47,6 @@
         font-weight: 600;
       }
 
-      .tix-column-quantity select {
-        border-radius: .1875rem;
-        cursor: pointer;
-        background-color: #fff;
-        width: 100%;
-        border: 1px solid @table-border-top-color;
-      }
-
       .tix-row-coupon {
         #tix-coupon-link {
           .h4;
@@ -63,16 +55,6 @@
         #tix-coupon-container {
           position: relative;
           padding-right: 10rem;
-
-          #tix-coupon-input {
-            margin-right: 6px;
-            border-color: @table-border-top-color;
-            line-height: 1.4;
-
-            &:focus {
-              border-color: darken(@table-border-top-color, 20%);
-            }
-          }
 
           input[type="submit"] {
             .button;
@@ -84,10 +66,52 @@
           }
         }
       }
+
+      .tix-column-quantity select {
+        width: 100%;
+      }
+
+      select {
+        border-radius: .1875rem;
+        cursor: pointer;
+        background-color: #fff;
+        width: 70%;
+        border: 1px solid @table-border-top-color;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="url"],
+      textarea {
+        margin-right: 6px;
+        border-color: @table-border-top-color;
+        line-height: 1.4;
+        border-radius: .15rem;
+
+        &:focus {
+          border-color: darken(@table-border-top-color, 20%);
+        }
+      }
+
+      .tix-left {
+        font-size: 1rem;
+      }
+
+      .tix-right {
+        label {
+          font-weight: 400;
+          font-size: 1rem;
+        }
+
+        br {
+          display: none;
+        }
+      }
     }
   }
 
-  form > p > input[type="submit"] {
+  input[type="submit"],
+  .tix-submit input[type="submit"] {
     .button;
     background-color: @nav-ticket-badge-bg-color;
     color: @nav-ticket-badge-color;
@@ -96,6 +120,46 @@
     &:hover {
       background-color: @nav-ticket-badge-bg-hover-color;
       color: @nav-ticket-badge-hover-color;
+    }
+  }
+
+  .tix-submit {
+    .tix-payment-method-container {
+      padding-top: 0;
+
+      label {
+        display: inline;
+      }
+
+      .tix-alternate-payment-option {
+        float: right;
+
+        #tix-payment-method_paypal {
+          display: none;
+
+          + label {
+            background: url(https://www.paypalobjects.com/webstatic/mktg/logo-center/logo_paypal_sicuro.png);
+            background-size: 100% 100%;
+            width: 159px;
+            height: 55px;
+            text-indent: 100%;
+            white-space: nowrap;
+            display: inline-block;
+            overflow: hidden;
+            cursor: pointer;
+            box-sizing: border-box;
+            border: 2px solid #fff;
+
+            &:hover {
+              border-color: #555;
+            }
+          }
+
+          &:checked + label {
+            border-color: #555;
+          }
+        }
+      }
     }
   }
 }
