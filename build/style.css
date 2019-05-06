@@ -1361,14 +1361,6 @@ a.btn-red:hover, a.btn-red:focus {
 }
 
 /*--------------------------------------------------------------
-13.3 Regular Content
---------------------------------------------------------------*/
-.site-content-contain {
-  background-color: #fff;
-  position: relative;
-}
-
-/*--------------------------------------------------------------
 13.4 Posts
 --------------------------------------------------------------*/
 /* Post Landing Page */
@@ -6345,6 +6337,25 @@ main.site-main {
   .wrap {
     width: 1170px;
   }
+}
+.site-content-contain {
+  background-color: #fff;
+  position: relative;
+  z-index: 0;
+}
+.site-content-contain:after {
+  background-image: url('https://2019.catania.wordcamp.org/files/2019/05/elephant-bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 906px;
+  height: 786px;
+  opacity: 0.03;
+  z-index: -1;
+  top: 60px;
 }
 /*--------------------------------------------------------------
 Buttons
