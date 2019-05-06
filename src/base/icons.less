@@ -1,7 +1,7 @@
-@base-url: "https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/spritemap.svg?sanitize=true";
+@base-url: "https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/sprite.svg?sanitize=true";
 
-.sprite(@icon, @gradient) {
-  background: url('@{base-url}#sprite-@{icon}-fragment') center no-repeat;
+.sprite(@icon) {
+  background: url('@{base-url}#@{icon}-usage') center no-repeat;
 }
 
 .wccta-icons {
@@ -11,26 +11,26 @@
   display: inline-block;
 
   &.balloon {
-    .sprite('balloon', 'SVGID_1_');
+    .sprite('balloon');
   }
 
   &.location {
-    .sprite('location', 'SVGID_2_');
+    .sprite('location');
   }
 
   &.speaker {
-    .sprite('speaker', 'SVGID_3_');
+    .sprite('speaker');
   }
 
   &.sponsor {
-    .sprite('sponsor', 'SVGID_4_');
+    .sprite('sponsor');
   }
 
   &.ticket {
-    .sprite('ticket', 'SVGID_5_');
+    .sprite('ticket');
   }
 
   &.volunteer {
-    .sprite('volunteer', 'SVGID_6_');
+    .sprite('volunteer');
   }
 }
