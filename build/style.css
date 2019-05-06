@@ -7078,23 +7078,20 @@ header.site-header .custom-logo-link img {
 .navigation-top .main-navigation ul li.menu-item-has-children .dropdown-toggle:after {
   content: '';
   display: inline-block;
-  right: 16px;
-  top: 1.875rem;
+  right: 13px;
+  top: 2.03rem;
   left: auto;
   position: absolute;
   overflow: hidden;
-  height: 6px;
   font-size: 1em;
-  width: 6px;
   text-align: center;
-  -webkit-transform: rotate(45deg);
-  /* Chrome, Safari, Opera */
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
   text-transform: none;
   text-indent: -10px;
-  border-right: 2px solid #07465b;
-  border-bottom: 2px solid #07465b;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #07465b;
 }
 .navigation-top .main-navigation ul li.menu-item-has-children svg {
   display: none !important;
@@ -7110,7 +7107,7 @@ header.site-header .custom-logo-link img {
 .navigation-top .main-navigation ul li.current_page_item .dropdown-toggle:after,
 .navigation-top .main-navigation ul li.current_page_parent .dropdown-toggle:after,
 .navigation-top .main-navigation ul li.current-menu-ancestor .dropdown-toggle:after {
-  border-color: #fff;
+  border-top-color: #fff;
 }
 .navigation-top .main-navigation ul li:hover,
 .navigation-top .main-navigation ul li.current-menu-ancestor:hover {
@@ -7119,7 +7116,7 @@ header.site-header .custom-logo-link img {
 }
 .navigation-top .main-navigation ul li:hover .dropdown-toggle:after,
 .navigation-top .main-navigation ul li.current-menu-ancestor:hover .dropdown-toggle:after {
-  border-color: #38a0c3;
+  border-top-color: #38a0c3;
 }
 .navigation-top .main-navigation ul li ul.sub-menu {
   display: none;

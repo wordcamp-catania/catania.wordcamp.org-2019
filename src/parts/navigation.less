@@ -69,23 +69,20 @@
             &:after {
               content: '';
               display: inline-block;
-              right: 16px;
-              top: 1.875rem;
+              right: 13px;
+              top: 2.03rem;
               left: auto;
               position: absolute;
               overflow: hidden;
-              height: 6px;
               font-size: 1em;
-              width: 6px;
               text-align: center;
-              -webkit-transform: rotate(45deg);
-              /* Chrome, Safari, Opera */
-              -ms-transform: rotate(45deg);
-              transform: rotate(45deg);
               text-transform: none;
               text-indent: -10px;
-              border-right: 2px solid @nav-link-color;
-              border-bottom: 2px solid @nav-link-color;
+              width: 0;
+              height: 0;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 6px solid #07465b;
             }
           }
 
@@ -102,7 +99,7 @@
           color: @nav-link-color-active;
 
           .dropdown-toggle:after {
-            border-color: @nav-link-color-active;
+            border-top-color: @nav-link-color-active;
           }
         }
 
@@ -112,7 +109,7 @@
           color: @nav-link-color-hover;
 
           .dropdown-toggle:after {
-            border-color: @nav-link-color-hover;
+            border-top-color: @nav-link-color-hover;
           }
         }
 
