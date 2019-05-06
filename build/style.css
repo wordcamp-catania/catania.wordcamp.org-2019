@@ -7240,6 +7240,7 @@ header.site-header .custom-logo-link img {
   width: 250px;
   text-align: left;
   padding: 10px 0;
+  z-index: 1;
 }
 .navigation-top .main-navigation ul li:hover ul.sub-menu li {
   background: #efefef;
@@ -7336,12 +7337,19 @@ header.site-header .custom-logo-link img {
   }
   .navigation-top .main-navigation .menu-main-menu-container ul li ul.sub-menu {
     display: none;
+    position: static;
+    padding: 0 0 0.25rem 10px;
+    width: 100%;
+    margin-bottom: 0.25rem;
   }
   .navigation-top .main-navigation .menu-main-menu-container ul li:hover {
     display: block;
   }
   .navigation-top .main-navigation .menu-main-menu-container ul li:hover ul.sub-menu {
     display: block;
+  }
+  .navigation-top .main-navigation .menu-main-menu-container ul li:hover ul.sub-menu a {
+    padding: 0.5em 15px;
   }
   .navigation-top .main-navigation .menu-main-menu-container ul li.menu-item-has-children svg {
     display: inline !important;
