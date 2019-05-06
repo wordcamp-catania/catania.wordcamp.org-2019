@@ -590,67 +590,6 @@ html[lang="ar"] *, html[lang="ary"] *, html[lang="azb"] *, html[lang="haz"] *, h
   letter-spacing: 0 !important;
 }
 
-/*--------------------------------------------------------------
-6.0 Forms
---------------------------------------------------------------*/
-label {
-  color: #333;
-  display: block;
-  font-weight: 800;
-  margin-bottom: .5em;
-}
-
-fieldset {
-  margin-bottom: 1em;
-}
-
-input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] {
-  color: #666;
-  background: #fff;
-  background-image: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-  border: 1px solid #bbb;
-  border-radius: 0;
-  display: block;
-  padding: .7em;
-  width: 100%;
-}
-
-textarea {
-  color: #666;
-  background: #fff;
-  background-image: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));
-  border: 1px solid #bbb;
-  border-radius: 0;
-  display: block;
-  padding: .7em;
-  width: 100%;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus {
-  color: #222;
-  border-color: #333;
-}
-
-textarea:focus {
-  color: #222;
-  border-color: #333;
-}
-
-select {
-  border: 1px solid #bbb;
-  border-radius: 0;
-  height: 3em;
-  max-width: 100%;
-}
-
-input[type="radio"], input[type="checkbox"] {
-  margin-right: .5em;
-}
-
-input[type="radio"] + label, input[type="checkbox"] + label {
-  font-weight: 400;
-}
-
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder, :-moz-placeholder {
   color: #333;
@@ -667,57 +606,6 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 :-ms-input-placeholder {
   color: #333;
   font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
-}
-
-/*Contact Form*/
-.contact-submit,
-.form-submit {
-  background-color: #009cdc;
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-}
-
-.contact-submit input[type="submit"],
-.form-submit input[type="submit"] {
-  background: none;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-  font-weight: normal;
-  color: #fff;
-  font-family: Oswald, sans-serif;
-}
-
-.contact-submit input[type="submit"]:hover,
-.form-submit input[type="submit"]:hover {
-  background: none;
-}
-
-.contact-submit:after,
-.form-submit:after {
-  display: block;
-  content: '';
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Chrome, Safari, Opera */
-  transform: rotate(45deg);
-  top: 100%;
-  width: 1000px;
-  height: 1000px;
-  position: absolute;
-  left: 20%;
-  background: #fff;
-  opacity: .2;
-  -webkit-transition: all .21s ease-in-out;
-  -o-transition: all .21s ease-in-out;
-  transition: all .21s ease-in-out;
-}
-
-.contact-submit:hover:after,
-.form-submit:hover:after {
-  top: -850%;
 }
 
 /*--------------------------------------------------------------
