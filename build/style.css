@@ -6910,22 +6910,22 @@ html[lang="th"] * {
   display: inline-block;
 }
 .wccta-icons.balloon {
-  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/spritemap.svg?sanitize=true#sprite-balloon-fragment') center no-repeat;
+  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/sprite.svg?sanitize=true#balloon-usage') center no-repeat;
 }
 .wccta-icons.location {
-  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/spritemap.svg?sanitize=true#sprite-location-fragment') center no-repeat;
+  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/sprite.svg?sanitize=true#location-usage') center no-repeat;
 }
 .wccta-icons.speaker {
-  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/spritemap.svg?sanitize=true#sprite-speaker-fragment') center no-repeat;
+  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/sprite.svg?sanitize=true#speaker-usage') center no-repeat;
 }
 .wccta-icons.sponsor {
-  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/spritemap.svg?sanitize=true#sprite-sponsor-fragment') center no-repeat;
+  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/sprite.svg?sanitize=true#sponsor-usage') center no-repeat;
 }
 .wccta-icons.ticket {
-  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/spritemap.svg?sanitize=true#sprite-ticket-fragment') center no-repeat;
+  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/sprite.svg?sanitize=true#ticket-usage') center no-repeat;
 }
 .wccta-icons.volunteer {
-  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/spritemap.svg?sanitize=true#sprite-volunteer-fragment') center no-repeat;
+  background: url('https://raw.githubusercontent.com/wordcamp-catania/catania.wordcamp.org-2019/master/build/sprite.svg?sanitize=true#volunteer-usage') center no-repeat;
 }
 .site-content {
   padding: 4.5em 0 0;
