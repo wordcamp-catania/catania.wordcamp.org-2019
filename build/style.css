@@ -7872,6 +7872,15 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
 #wccsp-container .wccsp-header {
   background-position: bottom center;
 }
+@media (max-width: 992px) {
+  #tix-attendees ul.tix-attendee-list {
+    padding-left: 0;
+  }
+  #tix-attendees ul.tix-attendee-list li {
+    width: 100%;
+    float: none;
+  }
+}
 
 
 /*# sourceMappingURL=style.css.map*/
