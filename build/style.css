@@ -7043,7 +7043,7 @@ header.site-header .custom-logo-link img {
     width: auto;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (min-width: 992px) {
   .navigation-top {
     font-size: 0.7375rem;
   }
