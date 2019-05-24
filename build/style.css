@@ -6387,7 +6387,7 @@ Alignments
   transform: rotate(-40deg);
   transition: all ease 0.3s;
 }
-.site-branding:after:hover {
+.site-branding:hover:after {
   right: -50px;
   transform: rotate(-50deg);
 }
