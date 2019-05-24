@@ -149,16 +149,42 @@ Alignments
 /*--------------------------------------------------------------
 Alignments
 --------------------------------------------------------------*/
-.wapuu-edge {
+.wapuu() {
   display: block;
   width: 150px;
   height: 200px;
   background: url(https://2019.catania.wordcamp.org/files/2019/05/wapuu.png);
-  position: fixed;
-  top: 80px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/** Wapuu CSS solution */
+.site-branding {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    .wapuu();
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: -70px;
+    transform: rotate(-40deg);
+    transition: all ease 0.3s;
+
+    &:hover {
+      right: -50px;
+      transform: rotate(-50deg);
+    }
+  }
+}
+
+/** JS Solution */
+.wapuu-edge {
+  .wapuu();
+  position: fixed;
+  top: 80px;
   right: -200px;
   transition: all ease 0.3s;
   z-index: @zindex-tooltip;
