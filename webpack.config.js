@@ -19,7 +19,9 @@ module.exports = {
         filename: '[name].js',
         path: path.resolve(__dirname, 'build')
     },
-    externals: /^(jquery|\$)$/i,
+    externals: {
+        jquery: 'jQuery'
+    },
     module: {
         rules: [
             {

@@ -145,3 +145,31 @@ Alignments
   margin-left: auto;
   margin-right: auto;
 }
+
+/*--------------------------------------------------------------
+Alignments
+--------------------------------------------------------------*/
+.wapuu-edge {
+  display: block;
+  width: 150px;
+  height: 200px;
+  background: url(https://2019.catania.wordcamp.org/files/2019/05/wapuu.png);
+  position: fixed;
+  top: 80px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: -200px;
+  transition: all ease 0.3s;
+  z-index: @zindex-tooltip;
+
+  &.visible {
+    right: -70px;
+    transform: rotate(-40deg);
+  }
+
+  &:hover {
+    right: -50px;
+    transform: rotate(-50deg);
+  }
+}
