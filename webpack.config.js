@@ -10,12 +10,16 @@ module.exports = {
             './src/base/2018-orlando.css',
             './src/main.less'
         ],
+        script: [
+            './src/js/main.js',
+        ],
         sprite: glob.sync('./resources/icons/*.svg')
     },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'build')
     },
+    externals: /^(jquery|\$)$/i,
     module: {
         rules: [
             {
@@ -52,6 +56,16 @@ module.exports = {
                 options: {
                     extract: true
                 }
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ]
     },
@@ -63,6 +77,11 @@ module.exports = {
         new webpack.SourceMapDevToolPlugin({
             append: '\n//# sourceMappingURL=[url]',
             filename: '[file].map'
+        }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            'window.jQuery': 'jquery'
         }),
         new SpriteLoaderPlugin()
     ]

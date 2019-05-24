@@ -1,6 +1,7 @@
 node_modules
 build/*
 !build/style.css
+!build/script.js
 !build/sprite.svg
 
 .DS_Store
