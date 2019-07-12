@@ -201,10 +201,6 @@ h3 {
   font-style: normal;
 }
 
-.wcpt-schedule .wcpt-session-type-custom {
-  height: auto;
-}
-
 .wcb_speaker .speaker-avatar {
   display: none;
 }
@@ -1785,92 +1781,6 @@ body:not(.twentyseventeen-front-page) .entry-header {
   margin: 0 1.25rem;
 }
 
-.wcpt-schedule {
-  font-size: 14px;
-}
-
-.wcpt-schedule .wcpt-col-time {
-  width: 4%;
-  border-bottom: 0;
-}
-
-.wcpt-schedule .wcpt-col-track {
-  width: 32%;
-  border-bottom-width: 0;
-}
-
-.wcpt-schedule .wcpt-time {
-  font-weight: bold;
-}
-
-.wcpt-schedule tr.global-session {
-  background-color: #f6f9fb;
-}
-
-.wcpt-schedule td {
-  padding: .7em;
-  vertical-align: top;
-}
-
-.wcpt-schedule th {
-  padding: .7em;
-}
-
-.wcpt-schedule .wcpt-session-speakers {
-  clear: both;
-  display: block;
-}
-
-.wcpt-schedule .wcpt-session-speakers a {
-  font-style: italic;
-  color: #c02942;
-  font-size: 13px;
-}
-
-.wcpt-schedule .wcpt-session-type-custom {
-  font-weight: bold;
-  text-align: center;
-  height: 50px;
-}
-
-.wcpt-schedule .wcpt-col-track {
-  background: #e9eff3;
-  text-align: center;
-}
-
-.wcpt-schedule .wcpt-col-track:nth-child(even) {
-  background: #f3f6f8;
-}
-
-.wcb-speaker-maciej-swoboda,
-.wcb-speaker-tomasz-palak {
-  text-align: center;
-  background-color: #fff;
-}
-
-.wcpt-schedule td {
-  position: relative;
-}
-
-.wcpt-schedule div.wcb-session-favourite-icon {
-  float: right;
-  width: auto;
-  text-align: center;
-  position: absolute;
-  top: 12px;
-  right: 5px;
-}
-
-.wcb-session-cell-content {
-  padding-right: 2em;
-}
-
-@media screen and (max-width: 700px) {
-  span.wcpt-session-speakers {
-    padding-left: 10px;
-  }
-}
-
 /* Site info */
 .site-info {
   padding: .5em 0;
@@ -3316,29 +3226,6 @@ Sponsors
   }
 }
 
-@media screen and (max-width: 700px) {
-  .wcpt-schedule .wcpt-session-type-session:before {
-    border: none;
-    padding: 3px 10px;
-    font-size: 12px;
-  }
-
-  .wcpt-schedule tbody tr {
-    border: none;
-  }
-
-  .wcpt-schedule tbody tr td {
-    border-bottom: 1px solid #eee;
-  }
-
-  .wcpt-schedule tbody tr td.wcpt-time {
-    background: #f4f4f4;
-    clear: both;
-    padding: .7em;
-    width: 100%;
-  }
-}
-
 @-webkit-keyframes navigation-fixing {
   from {
     -webkit-transform: translateY(-100%);
@@ -3647,10 +3534,6 @@ body.home .entry-content img.aligncenter {
 
 body.home .container.marginbottom0 {
   margin-bottom: 0;
-}
-
-.wcpt-schedule .wcpt-session-type-custom {
-  height: auto;
 }
 
 .wcb_speaker .speaker-avatar {
@@ -7936,6 +7819,73 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
     width: 100%;
     float: none;
   }
+}
+.wcpt-schedule {
+  font-size: 17px;
+  margin-top: 2.7em;
+}
+.wcpt-schedule thead th {
+  background: #24647d;
+  border-right: 3px solid #24647d;
+  color: #fff;
+}
+.wcpt-schedule tr.global-session td,
+.wcpt-schedule .wcpt-time {
+  background-color: #e4ecef;
+}
+.wcpt-schedule th {
+  padding: 0.7em;
+}
+.wcpt-schedule td {
+  position: relative;
+  padding: 1em;
+  vertical-align: top;
+  background: #fff;
+  border-right: 3px solid #e4ecef;
+}
+.wcpt-schedule .wcpt-col-time {
+  width: 4%;
+  border-bottom: 0;
+}
+.wcpt-schedule .wcpt-col-track {
+  width: 32%;
+  border-bottom-width: 0;
+  text-align: center;
+}
+.wcpt-schedule .wcpt-time {
+  font-weight: bold;
+}
+.wcpt-schedule a.wcpt-session-title {
+  color: #333;
+  font-weight: 600;
+}
+.wcpt-schedule .wcpt-session-speakers {
+  clear: both;
+  display: block;
+}
+.wcpt-schedule .wcpt-session-speakers a {
+  font-style: italic;
+  color: #24647d;
+  font-size: 13px;
+}
+.wcpt-schedule .wcpt-session-type-custom {
+  font-weight: bold;
+  text-align: center;
+  height: 50px;
+}
+.wcpt-schedule div.wcb-session-favourite-icon {
+  float: right;
+  width: auto;
+  text-align: center;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+}
+.wcpt-schedule tbody tr:hover td.wcpt-session-type-session {
+  background: #f1f5f7;
+}
+.wcb-session-cell-content {
+  padding-right: 2em;
 }
 
 
