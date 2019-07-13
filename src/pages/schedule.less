@@ -54,11 +54,11 @@
   .wcpt-session-speakers {
     clear: both;
     display: block;
+    font-size: 13px;
 
     a {
       font-style: italic;
       color: @title-bg-color;
-      font-size: 13px;
     }
   }
 
@@ -88,4 +88,52 @@
 
 .wcb-session-cell-content {
   padding-right: 2em;
+}
+
+@media screen and (max-width: 700px) {
+  .wcpt-schedule {
+    tr.global-session {
+      display: flex;
+    }
+
+    tr {
+      &:hover {
+        td.wcpt-session-type-session {
+          background: #fff !important;
+        }
+      }
+
+      td {
+        padding: 20px;
+        border: 0;
+
+        &.wcpt-session-type-custom {
+          width: 100%;
+          height: auto;
+        }
+
+        &.wcpt-session-type-session{
+          &:before {
+            padding: 8px 0;
+            margin: 0 0 9px;
+            font-size: inherit;
+          }
+
+          .wcpt-session-title {
+            padding: 10px 0;
+            text-align: left;
+          }
+
+          span.wcpt-session-speakers {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    div.wcb-session-favourite-icon {
+      top: 28px;
+      right: 13px;
+    }
+  }
 }

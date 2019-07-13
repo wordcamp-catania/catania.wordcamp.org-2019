@@ -1749,18 +1749,21 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 /*organizers*/
-.wcorg-organizers .wcorg-organizer .wcorg-organizer-description {
+.wcorg-organizers .wcorg-organizer .wcorg-organizer-description,
+.wcorg-speakers .wcorg-speaker .wcorg-speaker-description{
   position: relative;
   padding-left: 120px;
   padding-bottom: 30px;
   min-height: 140px;
 }
 
-.wcorg-organizers .wcorg-organizer .wcorg-organizer-description p:last-child {
+.wcorg-organizers .wcorg-organizer .wcorg-organizer-description p:last-child,
+.wcorg-speakers .wcorg-speaker .wcorg-speaker-description p:last-child {
   margin-bottom: 0;
 }
 
-.wcorg-organizers .wcorg-organizer .wcorg-organizer-description .avatar {
+.wcorg-organizers .wcorg-organizer .wcorg-organizer-description .avatar,
+.wcorg-speakers .wcorg-speaker .wcorg-speaker-description .avatar {
   margin-right: 25px;
   width: 96px;
   height: 96px;
@@ -3606,14 +3609,6 @@ body.home .container.marginbottom0 {
   display: none;
 }
 
-.wcorg-speakers {
-  display: grid;
-  grid-template-columns: repeat(2,50%);
-  grid-column-gap: 50px;
-  justify-items: stretch;
-  align-items: start;
-}
-
 .wcorg-speaker,
 .wcorg-organizer {
   margin-top: 0;
@@ -3622,44 +3617,6 @@ body.home .container.marginbottom0 {
 div.wcorg-speaker h2, div.wcorg-organizer h2 {
   margin-top: 1em !important;
   margin-bottom: .5em;
-}
-
-.wcorg-speaker-description img.emoji,
-.wcorg-session-description img.emoji {
-  float: none;
-}
-
-@media screen and (max-width: 768px) {
-  .wcorg-speakers,
-  .wcorg-organizers {
-    grid-template-columns: 100%;
-  }
-
-  .attachment-wcb-sponsor-logo-horizontal-2x {
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 62rem) {
-  body.home ul.wp-block-latest-posts.aligncenter.is-grid.columns-3.container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-}
-
-@media screen and (min-width: 48em) {
-  .page-two-column .panel-content .entry-content {
-    float: none !important;
-    width: auto !important;
-  }
-}
-
-.page-id-1756 .wcorg-speaker-description p {
-  display: none;
-}
-
-.page-id-1756 .wcorg-speaker-description .avatar {
-  border-radius: 0;
 }
 
 .sponsor-logos img {
@@ -7862,11 +7819,11 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
 .wcpt-schedule .wcpt-session-speakers {
   clear: both;
   display: block;
+  font-size: 13px;
 }
 .wcpt-schedule .wcpt-session-speakers a {
   font-style: italic;
   color: #24647d;
-  font-size: 13px;
 }
 .wcpt-schedule .wcpt-session-type-custom {
   font-weight: bold;
@@ -7886,6 +7843,38 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
 }
 .wcb-session-cell-content {
   padding-right: 2em;
+}
+@media screen and (max-width: 700px) {
+  .wcpt-schedule tr.global-session {
+    display: flex;
+  }
+  .wcpt-schedule tr:hover td.wcpt-session-type-session {
+    background: #fff !important;
+  }
+  .wcpt-schedule tr td {
+    padding: 20px;
+    border: 0;
+  }
+  .wcpt-schedule tr td.wcpt-session-type-custom {
+    width: 100%;
+    height: auto;
+  }
+  .wcpt-schedule tr td.wcpt-session-type-session:before {
+    padding: 8px 0;
+    margin: 0 0 9px;
+    font-size: inherit;
+  }
+  .wcpt-schedule tr td.wcpt-session-type-session .wcpt-session-title {
+    padding: 10px 0;
+    text-align: left;
+  }
+  .wcpt-schedule tr td.wcpt-session-type-session span.wcpt-session-speakers {
+    padding-left: 10px;
+  }
+  .wcpt-schedule div.wcb-session-favourite-icon {
+    top: 28px;
+    right: 13px;
+  }
 }
 
 
