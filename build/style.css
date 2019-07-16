@@ -7786,7 +7786,7 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
   border-right: 3px solid #24647d;
   color: #fff;
 }
-.wcpt-schedule tr.global-session:not(.lavoro-in-team, .unittests-for-wordpress-plugins-without-wp, .come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup, .il-ruolo-della-formazione-in-un-mercato-che-cambia) td,
+.wcpt-schedule tr.global-session td,
 .wcpt-schedule .wcpt-time {
   background-color: #e4ecef;
 }
