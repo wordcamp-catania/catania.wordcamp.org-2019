@@ -7786,7 +7786,7 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
   border-right: 3px solid #24647d;
   color: #fff;
 }
-.wcpt-schedule tr.global-session td,
+.wcpt-schedule tr.global-session:not(.lavoro-in-team, .unittests-for-wordpress-plugins-without-wp, .come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup, .il-ruolo-della-formazione-in-un-mercato-che-cambia) td,
 .wcpt-schedule .wcpt-time {
   background-color: #e4ecef;
 }
@@ -7848,51 +7848,27 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
   .wcpt-schedule tr.global-session {
     display: flex;
   }
-  .wcpt-schedule tr:hover td.wcpt-session-type-session,
-  .wcpt-schedule tr.lavoro-in-team:hover td.wcpt-session-type-session,
-  .wcpt-schedule tr.unittests-for-wordpress-plugins-without-wp:hover td.wcpt-session-type-session,
-  .wcpt-schedule tr.come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup:hover td.wcpt-session-type-session,
-  .wcpt-schedule tr.il-ruolo-della-formazione-in-un-mercato-che-cambia:hover td.wcpt-session-type-session {
+  .wcpt-schedule tr:hover td.wcpt-session-type-session {
     background: #fff !important;
   }
-  .wcpt-schedule tr td,
-  .wcpt-schedule tr.lavoro-in-team td,
-  .wcpt-schedule tr.unittests-for-wordpress-plugins-without-wp td,
-  .wcpt-schedule tr.come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup td,
-  .wcpt-schedule tr.il-ruolo-della-formazione-in-un-mercato-che-cambia td {
+  .wcpt-schedule tr td {
     padding: 20px;
     border: 0;
   }
-  .wcpt-schedule tr td.wcpt-session-type-custom,
-  .wcpt-schedule tr.lavoro-in-team td.wcpt-session-type-custom,
-  .wcpt-schedule tr.unittests-for-wordpress-plugins-without-wp td.wcpt-session-type-custom,
-  .wcpt-schedule tr.come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup td.wcpt-session-type-custom,
-  .wcpt-schedule tr.il-ruolo-della-formazione-in-un-mercato-che-cambia td.wcpt-session-type-custom {
+  .wcpt-schedule tr td.wcpt-session-type-custom {
     width: 100%;
     height: auto;
   }
-  .wcpt-schedule tr td.wcpt-session-type-session:before,
-  .wcpt-schedule tr.lavoro-in-team td.wcpt-session-type-session:before,
-  .wcpt-schedule tr.unittests-for-wordpress-plugins-without-wp td.wcpt-session-type-session:before,
-  .wcpt-schedule tr.come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup td.wcpt-session-type-session:before,
-  .wcpt-schedule tr.il-ruolo-della-formazione-in-un-mercato-che-cambia td.wcpt-session-type-session:before {
+  .wcpt-schedule tr td.wcpt-session-type-session:before {
     padding: 8px 0;
     margin: 0 0 9px;
     font-size: inherit;
   }
-  .wcpt-schedule tr td.wcpt-session-type-session .wcpt-session-title,
-  .wcpt-schedule tr.lavoro-in-team td.wcpt-session-type-session .wcpt-session-title,
-  .wcpt-schedule tr.unittests-for-wordpress-plugins-without-wp td.wcpt-session-type-session .wcpt-session-title,
-  .wcpt-schedule tr.come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup td.wcpt-session-type-session .wcpt-session-title,
-  .wcpt-schedule tr.il-ruolo-della-formazione-in-un-mercato-che-cambia td.wcpt-session-type-session .wcpt-session-title {
+  .wcpt-schedule tr td.wcpt-session-type-session .wcpt-session-title {
     padding: 10px 0;
     text-align: left;
   }
-  .wcpt-schedule tr td.wcpt-session-type-session span.wcpt-session-speakers,
-  .wcpt-schedule tr.lavoro-in-team td.wcpt-session-type-session span.wcpt-session-speakers,
-  .wcpt-schedule tr.unittests-for-wordpress-plugins-without-wp td.wcpt-session-type-session span.wcpt-session-speakers,
-  .wcpt-schedule tr.come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup td.wcpt-session-type-session span.wcpt-session-speakers,
-  .wcpt-schedule tr.il-ruolo-della-formazione-in-un-mercato-che-cambia td.wcpt-session-type-session span.wcpt-session-speakers {
+  .wcpt-schedule tr td.wcpt-session-type-session span.wcpt-session-speakers {
     padding-left: 10px;
   }
   .wcpt-schedule div.wcb-session-favourite-icon {
