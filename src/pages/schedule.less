@@ -14,7 +14,7 @@
     }
   }
 
-  tr.global-session td,
+  tr.global-session:not(.lavoro-in-team, .unittests-for-wordpress-plugins-without-wp, .come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup, .il-ruolo-della-formazione-in-un-mercato-che-cambia) td,
   .wcpt-time {
     background-color: @main-session-bg-color;
   }
@@ -96,11 +96,7 @@
       display: flex;
     }
 
-    tr,
-    tr.lavoro-in-team,
-    tr.unittests-for-wordpress-plugins-without-wp,
-    tr.come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup,
-    tr.il-ruolo-della-formazione-in-un-mercato-che-cambia {
+    tr {
       &:hover {
         td.wcpt-session-type-session {
           background: #fff !important;
