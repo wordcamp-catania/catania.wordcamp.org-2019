@@ -7790,6 +7790,12 @@ footer.site-footer .widget-area .widget.jetpack_widget_social_icons li:hover .ic
 .wcpt-schedule .wcpt-time {
   background-color: #e4ecef;
 }
+.wcpt-schedule tr.lavoro-in-team td,
+.wcpt-schedule tr.unittests-for-wordpress-plugins-without-wp td,
+.wcpt-schedule tr.come-progettare-un-programma-di-collaborazione-tra-aziende-e-startup td,
+.wcpt-schedule tr.il-ruolo-della-formazione-in-un-mercato-che-cambia td {
+  background-color: #fff;
+}
 .wcpt-schedule th {
   padding: 0.7em;
 }
